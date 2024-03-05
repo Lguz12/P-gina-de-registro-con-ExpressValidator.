@@ -1,0 +1,10 @@
+<main class="container">
+@for (item of publicaciones(); track item) {
+<app-hijo-inicio
+    [rutaImagenUsuario]="item.imagenUsuario"
+    [rutaNombre]="item.nombre"
+    [rutaImagen]="item.imagenPublicacion"
+    [rutaComentario]="item.textoPublicacion"
+></app-hijo-inicio>
+}
+</main>
